@@ -99,7 +99,7 @@ def process_data():
             node_id = node['node']['properties']['label']
             if node_id in prediction_dict:
                 node['node']['properties']['predictedClass'] = prediction_dict[node_id]
-                print(f"Added predictedClass for node_id: {node_id}")
+                #print(f"Added predictedClass for node_id: {node_id}")
             else:
                 print(f"node_id {node_id} not found in processed_data")
         # Write the combined data back to nodesAndEdges.json (or a new file if you prefer)
